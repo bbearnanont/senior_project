@@ -4,7 +4,6 @@ import sys, requests, shutil, os
 from urllib import request, error
 from datetime import date, timedelta
 import datetime
-import atexit
 #https://www.kaggle.com/abinesh100/easy-download-images-in-25-lines-py3 <--Reference code
 #All of radar Data extracted from "http://www.data.jma.go.jp/mscweb/data/himawari/"
 
@@ -131,8 +130,7 @@ if __name__ == "__main__":
                  verbose = True)
     #can set vebose = True for debugging
     #to scrape use ScraperObj.scraping()
-    #atexit.register(exit_handler(HA1, SE1)) 
-    #writing logfile when temrinated
+    #writing logfile when terminated
   
     try:
         HA1.scraping()
