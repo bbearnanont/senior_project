@@ -1,2 +1,2 @@
 # senior_project
-Short term weather forcast
+run: python web_scraping.py
